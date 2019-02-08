@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: center;
     height: 120px;
-}
+} 
 
 .conteiner {
     width: 990px;
@@ -289,4 +289,13 @@ footer {
 
 footer .widget_title_text {
     color: #fff
+}
+
+.footer_copy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
 }
