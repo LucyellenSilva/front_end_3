@@ -35,6 +35,10 @@ header {
     align-items: center;
 }
 
+.menu-mobile {
+    display: none;
+}
+
 nav ul,
 nav li {
     list-style: none;
@@ -298,4 +302,90 @@ footer .widget_title_text {
     color: #5c5c5c;
     font-size: 12px;
     margin-top: 30px;
+}
+
+.departaments {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.departaments-content {
+    width: 150px;
+    height: 150px;
+    background-color: #36a9e1;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:989px) {  
+    .widget_title_text,
+    .widget_title_bar {
+        margin-left: 2%;
+    }
+
+    #body section {
+        flex: 3;
+        justify-content: center;
+    }
+    
+    #body aside {
+        flex: 1;
+    }
+
+    .departaments {
+        justify-content: center;
+    }
+
+    section .widget_body {
+        justify-content: center;
+    }
+}
+
+@media (max-width:854px)  {  
+    article {
+        width: 80%;
+        margin-left: 6%;
+    }
+}
+
+
+@media (max-width: 714px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu-mobile {
+        display: block;
+        margin: auto;
+        margin-right: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .banner-options {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #banner {
+        height: 900px;
+    }
+}
+
+@media (max-width: 575px) {
+    #body .conteiner{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
